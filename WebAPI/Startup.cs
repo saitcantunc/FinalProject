@@ -32,8 +32,8 @@ namespace WebAPI
             //Autofac, Ninject, CastleWindsor, StructureMap, LightInject, DryInject --> IoC Container
             //AOP --> Bir metodun önünde, sonunda ya da hata verdiðinde çalýþan kod parçacýklarýný AOP ile yazýyoruz.
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>(); //Arka planda newleme yapmamýzý saðlar.
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>(); //Arka planda newleme yapmamýzý saðlar.
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
